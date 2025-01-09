@@ -46,8 +46,10 @@ class sqliteread :
   def readstapsTable(self):
      self.cursor.execute('SELECT * FROM staps LIMIT 1000')
      data = self.cursor.fetchall()
+     column_names = [description[0] for description in self.cursor.description]
+     df_staps = pd.DataFrame(data, columns=column_names)
      # print (data)
-     return (data)
+     return (df_staps)
 
   def readguardecsTable(self):
      self.cursor.execute('SELECT * FROM guardecs LIMIT 1000')
@@ -59,6 +61,14 @@ class sqliteread :
 
   def readcollsTable(self):
      self.cursor.execute('SELECT * FROM colls LIMIT 100')
+     data = self.cursor.fetchall()
+     column_names = [description[0] for description in self.cursor.description]
+     df_colls = pd.DataFrame(data, columns=column_names)
+     # print (data)
+     return (df_colls)
+
+  def readseltypTable(self):
+     self.cursor.execute('SELECT * FROM seltyp LIMIT 100')
      data = self.cursor.fetchall()
      # print (data)
      return (data)
@@ -97,6 +107,12 @@ class sqliteread :
      data = self.cursor.fetchall()
      return (data)
 
+  # --  SQLs  under watch  -----
+  def readsqlstowatchTable(self):
+     self.cursor.execute('SELECT * FROM sqlstowatch LIMIT 1500')
+     data = self.cursor.fetchall()
+     return (data)
+
 
   def openSqlite(self) :
      #self.conn = sqlite3.connect('sqlite/sqlitect22')
@@ -130,8 +146,13 @@ class sqliteread :
              data = self.readuwatchsqlsTable()
      elif data == 'extracts' :
              data = self.readextractsTable()
+     elif data == 'seltyp' :
+             data = self.readseltypTable()
+     elif data == 'sqlswatch' :
+             data = self.readsqlstowatchTable()
      elif data == 'guardecs' :
              data = self.readguardecsTable()
+
      else:
              print( "No data  selected - nothing was done - ")
 
