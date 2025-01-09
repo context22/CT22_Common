@@ -1,0 +1,13 @@
+hash,sql,status,frequency
+075268b9080b86bc2b7d4d5096de9178,SELECT * FROM CCNTBL,Pending,300
+176d2f603e8fb5458de366db2099a178,SELECT * FROM HIPAA,Pending,400
+a685b961aae3b4a3760d1f0bec45bbe4,SELECT * FROM CCNTBL where CCN="?",Pending,300
+a7907ecff7557c5c6802231ca1419e53,SELECT name,description FROM products WHERE category="Gifts",Pending,300
+fe1d4c2df9200679455cba3dbe0feb94,SELECT name,description FROM products WHERE category="Gifts" UNION SELECT username,password FROM users--,Pending,300
+dbdb5cd89da1316146efbb51d2256d82,SELECT * FROM HIPAAHOSPITAL,SQLInjection,300
+6ecd6bcf4e3568d8bd483eb6d7c57d2c,SELECT * FROM HIPAA WHERE SSN='?',Pending,300
+1ac96c2294ebf794b35ab4a32eb17142,SELECT * FROM HIPAA22 where,Pending,1300
+05b7d25521aafc231b5876d8b5a7ac27,SELECT * FROM HIPAA23 where,Pending,1200
+8bee66e54fa8dc195683fa9185647c1a,SELECT * FROM HIPAA24 where,Pending,1100
+ef0d91583437a407e7208f5cd079da02,SELECT * FROM HIPAA25 where,Pending,1000
+

@@ -1,0 +1,2 @@
+sed -i 's/ //g' currentpreds.csv > new.txt
+sed -i 's/|/,/g' currentpreds.csv

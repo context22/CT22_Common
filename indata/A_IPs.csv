@@ -1,0 +1,19 @@
+Hostname,IP,Env,Location,Physical Type,Node Type,PII,Org,Business Owner,IT Owner
+SERVER_1,1.1.1.1,PROD,Internal,Node,Database,TRUE,Neuro,Rahman MD,Grouillot
+LAPTOP_1,,NON PROD,External,Laptop,Windows,FALSE,Neuro,Rahman MD,Grouillot
+SERVER_2,1.1.1.2,NON PROD,Internal,Node,APP Server,FALSE,Neuro,Dr Habbal,Grouillot
+SERVER_3,1.1.1.3,PROD,Internal,Node,Database,TRUE,Surgery,Mr Petit,De Base
+SERVER_4,1.1.1.4,PROD,Internal,Node,Database,TRUE,Neuro,Dr Habbal,Grouillot
+SERVER_11,1.1.1.11,PROD,Internal,Node,Database,TRUE,Neuro,Dr Habbal,Grouillot
+SERVER_51,1.1.1.11,QA,Internal,Node,Database,TRUE,Surgery,Mr Petit,De Base
+alp208.aimspecialtyhealth.com,1.1.1.208,NON PROD,Internal,Node,Database,TRUE,Neuro,Dr Habbal,Grouillot
+alp202.ct22.com,1.1.1.202,NON PROD,Internal,Node,Database,TRUE,Neuro,Dr Habbal,Grouillot
+alp220.ct22.com,1.1.1.220,NON PROD,Internal,Node,Database,TRUE,Neuro,Dr Habbal,Grouillot
+alp216.ct22.com,1.1.1.216,NON PROD,Internal,Node,Database,TRUE,Neuro,Dr Habbal,Grouillot
+alp299.ct22.com,1.1.1.299,NON PROD,Internal,Node,Database,TRUE,Neuro,Dr Habbal,Grouillot
+alp208.ct22.com,1.1.2.208,NON PROD,Internal,Node,Database,TRUE,Neuro,Dr Habbal,Grouillot
+alp275.ct22.com,1.1.1.275,NON PROD,Internal,Node,Database,TRUE,Neuro,Dr Habbal,Grouillot
+alp258.ct22.com,1.1.1.258,NON PROD,Internal,Node,Database,TRUE,Neuro,Dr Habbal,Grouillot
+alp277.ct22.com,1.1.1.277,NON PROD,Internal,Node,Database,TRUE,Neuro,Dr Habbal,Grouillot
+alp604.ct22.com,1.1.1.604,NON PROD,Internal,Node,Database,TRUE,Neuro,Dr Habbal,Grouillot
+alp003.ct22.com,1.1.1.003,NON PROD,Internal,Node,Database,TRUE,Neuro,Dr Habbal,Grouillot

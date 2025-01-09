@@ -1,0 +1,18 @@
+'guardium','ecs'
+'Access Rule Description',data.capturefiltername
+'Full Sql',data.fullsql
+'Records Affected',data.recordsaffected
+'Response Time',data.responsetime
+'Session Id',data.guardiumsessionid
+'Succeeded',data.succeeded
+'Timestamp',data.timestamp
+'Returned Data',data.returneddata
+'Analyzed Client IP',data.clientip
+'Client Host Name',data.clienthostname
+'DB User Name',data.dbusername
+'Database Name',data.dbname
+'Network Protocol',data.networkprotocol
+'Service Name',data.instancename
+'Session Start',data.sessionstart
+'Objects and Verbs',data.objectsandverbs
+'App User Name',data.appusername

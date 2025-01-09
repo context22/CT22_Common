@@ -1,0 +1,16 @@
+Select_Type,Type,Comment
+top,Top,Limited
+where,Limited,With Restrictions
+count,Count,Informative
+insert,Insert,Super Wild
+min,Min,Informative
+max,Max,Informative
+find,Find,Targetted
+Limit, Limit, Limited
+WHERE,Where,With Restrictions
+COUNT,Count,Informative
+MAX,Max,Informative
+MIN,Min,Informative
+TOP,Top,Limited
+INSERT,Insert,Super Wild
+LIMIT, Limit, Limited
