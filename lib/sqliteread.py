@@ -27,7 +27,8 @@ class sqliteread :
 
      # --- Required Keys
      self.collHost = self.param_data["HostnameColl"]
-     self.collIP = self.param_data["IPColl"]
+     # self.collIP = self.param_data["IPColl"]
+     self.collIP = self.param_data["IP"]
      self.stapHost = self.param_data["HostnameStap"]
      self.dbuser = self.param_data["DBUser"]
      self.node = self.param_data["Node"]
@@ -70,13 +71,16 @@ class sqliteread :
   def readseltypTable(self):
      self.cursor.execute('SELECT * FROM seltyp LIMIT 100')
      data = self.cursor.fetchall()
-     # print (data)
-     return (data)
+     column_names = [description[0] for description in self.cursor.description]
+     df_seltype = pd.DataFrame(data, columns=column_names)
+     return (df_seltype)
 
   def readdbusersTable(self):
      self.cursor.execute('SELECT * FROM dbusers LIMIT 500')
      data = self.cursor.fetchall()
-     return (data)
+     column_names = [description[0] for description in self.cursor.description]
+     df_dbusers = pd.DataFrame(data, columns=column_names)
+     return (df_dbusers)
 
   def readnodesTable(self):
      self.cursor.execute('SELECT * FROM nodes LIMIT 1500')
@@ -105,13 +109,17 @@ class sqliteread :
   def readuwatchsqlsTable(self):
      self.cursor.execute('SELECT * FROM uwatchsqls LIMIT 1500')
      data = self.cursor.fetchall()
-     return (data)
+     column_names = [description[0] for description in self.cursor.description]
+     df_uwatchsqls = pd.DataFrame(data, columns=column_names)
+     return (df_uwatchsqls)
 
   # --  SQLs  under watch  -----
   def readsqlstowatchTable(self):
      self.cursor.execute('SELECT * FROM sqlstowatch LIMIT 1500')
      data = self.cursor.fetchall()
-     return (data)
+     column_names = [description[0] for description in self.cursor.description]
+     df_towatchsqls = pd.DataFrame(data, columns=column_names)
+     return (df_towatchsqls)
 
 
   def openSqlite(self) :
